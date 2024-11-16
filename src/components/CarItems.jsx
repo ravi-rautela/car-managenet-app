@@ -9,7 +9,7 @@ const CarItems = ({ car }) => {
   return (
     <div className="rounded-xl bg-white border hover:shadow-md cursor-pointer">
       <img
-        src={car.images}
+        src={car?.images[0]?.imagesUrl}
         height={250}
         className="rounded-t-xl"
       />

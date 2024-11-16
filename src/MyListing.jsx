@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
 import { desc, eq } from "drizzle-orm";
 import Service from "./Services";
-// import CarItems from "@/components/CarItems";
+import CarItems from "@/components/CarItems";
 
 const MyListing = () => {
   const { user } = useUser();
@@ -47,14 +47,13 @@ const MyListing = () => {
           </Button>
         </Link>
       </div>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-7 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-7 gap-5">
         {carList.map((item) => (
           <div key={item.CarImages?.id || Math.random()}>
             <CarItems car={item} />
-            
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };
